@@ -1,0 +1,15 @@
+syntax = "proto3";
+option optimize_for = SPEED;
+
+package bench;
+
+message Empty {}
+
+message Message {
+  string text = 1;
+}
+
+service ServerService {
+  rpc GetMessage(Empty) returns (Message) {}
+  rpc SetMessage(Message) returns (Empty) {}
+}
