@@ -1,4 +1,6 @@
 project(rpc-bench)
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 3.17)
 
-add_subdirectory(protobuf)
+set(EXTERNAL_BINARY_DIR ${CMAKE_BINARY_DIR}/third_party)
+
+add_subdirectory(protobuf/superbuild)

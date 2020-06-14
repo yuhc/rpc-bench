@@ -5,7 +5,7 @@
 	# generated file that makes Git consider the submodule dirty. This
 	# state can be ignored for day-to-day development on gRPC.
 	ignore = dirty
-[submodule "third_party/cares"]
+[submodule "third_party/cares/cares"]
 	path = third_party/cares/cares
 	url = https://github.com/c-ares/c-ares.git
 	branch = cares-1_12_0
@@ -21,6 +21,3 @@
 	path = third_party/grpc
 	url = https://github.com/grpc/grpc.git
   branch = v1.29.1
-[submodule "third_party/cares/c-ares"]
-	path = third_party/cares/c-ares
-	url = https://github.com/c-ares/c-ares.git
